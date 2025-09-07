@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowDown, Play } from "lucide-react";
 
-export default function Hero() {
+export default function Hero({ onScrollClick }) {
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
 
   useEffect(() => {
@@ -61,7 +61,10 @@ export default function Hero() {
         </div>
 
       {showScrollIndicator && (
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-18 flex flex-col items-center cursor-pointer">
+        <div 
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-18 flex flex-col items-center cursor-pointer"
+          onClick={onScrollClick}
+        >
           <ArrowDown className="w-8 h-8 text-gray-600 animate-bounce" />
           <small className="text-gray-600 mt-2 uppercase">SCROLL DOWN</small>
         </div>
