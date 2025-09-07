@@ -11,14 +11,12 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <div className="pt-16"> {/* Add padding-top to account for fixed navbar */  }
-        <Hero />
-        <Services />
-        <Portfolio />
-        <About />
-        <Contact />
-        <Footer />
-      </div>
+      <Hero />
+      <Services />
+      <Portfolio />
+      <About />
+      <Contact />
+      <Footer />
     </div>
   );
 }

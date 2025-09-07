@@ -8,14 +8,14 @@ export default function Hero() {
     const handleScroll = () => {
       const heroHeight = window.innerHeight;
       const scrolled = window.scrollY;
-      setShowScrollIndicator(scrolled < heroHeight * 0.8);
+      setShowScrollIndicator(scrolled < heroHeight * 0.5);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <section id="home" className="h-fit bg-gradient-to-b from-gray-50 to-white flex items-center pt-12 relative">
+    <section id="home" className="h-fit bg-gradient-to-b from-gray-50 to-white flex items-center pt-32 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
