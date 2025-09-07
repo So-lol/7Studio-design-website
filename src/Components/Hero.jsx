@@ -15,26 +15,26 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="h-[750px] bg-gradient-to-b from-gray-50 to-white flex items-center pt-0 relative">
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
+    <section id="home" className="h-fit bg-gradient-to-b from-gray-50 to-white flex items-center pt-12 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-light leading-tight tracking-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-light leading-tight tracking-tight">
                 <span className="block">We craft</span>
                 <span className="block text-amber-500">extraordinary</span>
                 <span className="block">experiences</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Through strategic design thinking and innovative solutions, we transform brands and create digital experiences that resonate with your audience.
               </p>
             </div>
             
-            <div className="flex items-center space-x-6">
-              <button className="bg-black text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-gray-900 transition-colors duration-300">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-6">
+              <button className="w-full sm:w-auto bg-black text-white px-8 py-4 text-sm font-medium tracking-wide hover:bg-gray-900 transition-colors duration-300">
                 VIEW OUR WORK
               </button>
-              <button className="flex items-center space-x-2 text-gray-900 hover:text-amber-500 transition-colors duration-300">
+              <button className="w-full sm:w-auto flex items-center justify-center gap-3 text-gray-900 hover:text-amber-500 transition-colors duration-300">  
                 <div className="w-12 h-12 border-2 border-current rounded-full flex items-center justify-center">
                   <Play className="w-5 h-5 fill-current" />
                 </div>
@@ -61,7 +61,7 @@ export default function Hero() {
         </div>
 
       {showScrollIndicator && (
-        <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-18 flex flex-col items-center cursor-pointer">
 
           <ArrowDown className="w-8 h-8 text-gray-600 animate-bounce" />
           <small className="text-gray-600 mt-2 uppercase">SCROLL DOWN</small>
