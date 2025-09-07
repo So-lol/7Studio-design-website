@@ -17,14 +17,23 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <Hero onScrollClick={scrollToServices} />
-      <div ref={servicesRef}>
+      <div id="home">
+        <Hero onScrollClick={scrollToServices} />
+      </div>
+      <div id="services" ref={servicesRef}>
         <Services />
       </div>
-      <Portfolio />
-      <About />
-      <Contact />
+      <div id="portfolio">
+        <Portfolio />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
     </div>
   );
+
 }
