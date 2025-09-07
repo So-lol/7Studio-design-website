@@ -62,7 +62,6 @@ export default function Hero() {
 
       {showScrollIndicator && (
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-18 flex flex-col items-center cursor-pointer">
-
           <ArrowDown className="w-8 h-8 text-gray-600 animate-bounce" />
           <small className="text-gray-600 mt-2 uppercase">SCROLL DOWN</small>
         </div>
